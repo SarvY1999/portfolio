@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+body {
+    font-family: "Roboto Condensed";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----- Nav Links */
+.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav>li>a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+    max-width: 17.25rem;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 0.125rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-toggler {
+    border-color: rgba(0, 91, 192, 222);
+}
+
+.navbar-toggler-icon {
+    color: rgba(0, 91, 192, 222);
+}
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:focus {
+    border-top: 0.1875rem solid;
+}
+
+.navbar-nav>li>a:hover {
+    border-top: 0.1875rem solid;
 }
